@@ -19,6 +19,7 @@ func _main() error {
 
         if len(os.Args) < 2 {
           image()
+          return nil
         }
 
 	if os.Args[1] == "text" {
