@@ -27,7 +27,7 @@ func render_statusline() (string, func()) {
 	// }
 
 	for _, folder := range folders {
-		statusline_text += folder + "/"
+		statusline_text += folder + " "
 		position := float64(len(statusline_text) + (len(folder) / 2))
 		normalizedPosition := position / float64(len(info.CWD))
 		color_positions = append(color_positions, normalizedPosition)
